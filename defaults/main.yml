@@ -1,0 +1,5 @@
+---
+apt_source: http://archive.ubuntu.com/ubuntu/
+# apt_source: http://cn.archive.ubuntu.com/ubuntu/
+# apt_source: http://mirrors.aliyun.com/ubuntu/
+# apt_source: https://mirrors.tuna.tsinghua.edu.cn/ubuntu/

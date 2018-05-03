@@ -1,0 +1,14 @@
+---
+- name: change apt source
+  replace:
+    dest: /etc/apt/sources.list
+    regexp: 'https?://[^ ]+'
+    replace: "{{ apt_source }}"
+    backup: yes
+  when: change_apt_source
+  register: _apt_souce_change
+
+- name: update apt cache
+  apt:
+    update_cache: yes
+  when: _apt_souce_change | changed
