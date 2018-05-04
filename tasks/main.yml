@@ -5,7 +5,6 @@
     regexp: 'https?://[^ ]+'
     replace: "{{ apt_source }}"
     backup: yes
-  when: change_apt_source
   register: _apt_souce_change
 
 - name: update apt cache
